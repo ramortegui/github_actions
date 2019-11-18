@@ -17,6 +17,8 @@ defmodule GithubActionsWeb.ConnCase do
 
   use ExUnit.CaseTemplate
 
+  alias Ecto.Adapters.SQL.Sandbox
+
   using do
     quote do
       # Import conveniences for testing with connections
@@ -29,10 +31,10 @@ defmodule GithubActionsWeb.ConnCase do
   end
 
   setup tags do
-    :ok = Ecto.Adapters.SQL.Sandbox.checkout(GithubActions.Repo)
+    :ok = Sandbox.checkout(GithubActions.Repo)
 
     unless tags[:async] do
-      Ecto.Adapters.SQL.Sandbox.mode(GithubActions.Repo, {:shared, self()})
+      Sandbox.mode(GithubActions.Repo, {:shared, self()})
     end
 
     {:ok, conn: Phoenix.ConnTest.build_conn()}
