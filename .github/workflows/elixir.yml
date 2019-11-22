@@ -1,6 +1,8 @@
 name: Elixir CI
 
-on: [pull_request]
+on:
+  pull_request:
+    types: [opened, reopened, syncronize, closed]
 
 jobs:
   test:
