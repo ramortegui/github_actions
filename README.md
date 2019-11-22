@@ -1,6 +1,6 @@
 # GithubActions
 
-![](https://github.com/ramortegui/github_actions/workflows/Elixir%20CI/badge.svg?event=push|pull_request)
+![](https://github.com/ramortegui/github_actions/workflows/Elixir%20CI/badge.svg?event=push)
 
 To start your Phoenix server:
 
