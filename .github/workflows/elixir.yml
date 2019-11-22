@@ -1,8 +1,8 @@
-name: Elixir CI
+name: github_action
 
 on:
   pull_request:
-    types: [opened, reopened, synchronize, closed]
+    types: [opened, reopened, synchronize]
   push:
     branches:
       - 'master'
