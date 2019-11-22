@@ -1,5 +1,8 @@
 # GithubActions
 
+Elixir CI
+![](https://github.com/actions/hello-world/workflows/Elixir%20CI/badge.svg)
+
 To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`
