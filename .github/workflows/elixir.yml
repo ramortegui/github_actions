@@ -3,7 +3,9 @@ name: Elixir CI
 on:
   pull_request:
     types: [opened, reopened, synchronize, closed]
-
+  push:
+    branches:
+      - master
 jobs:
   test:
     runs-on: ubuntu-latest
